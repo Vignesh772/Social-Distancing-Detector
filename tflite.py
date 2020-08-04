@@ -205,10 +205,10 @@ def video():
             max_human_y=max([transf_points[i][0][1] for i in range(0,len(transf_points))])
             
         result=cv2.resize(result,(frame_width,frame_height))
-        cv2.imshow("image", result)
+        #cv2.imshow("image", result)
 
         result_to_display=cv2.resize(result_to_display,(900,900))
-        cv2.imshow("Display",result_to_display)
+        #cv2.imshow("Display",result_to_display)
 
         
 
