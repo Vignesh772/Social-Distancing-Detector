@@ -39,7 +39,7 @@ class Window(QWidget):
         min_value=value
         f = open("minValue.txt", "w")
         f.write(str(min_value))
-        #f.close()
+        
         
         
         print(min_value)
@@ -47,7 +47,6 @@ def return_value():
     global min_value
     return(min_value)
 
-#if __name__ == '__main__':
 app = QApplication(sys.argv)
 clock = Window()
 clock.show()
